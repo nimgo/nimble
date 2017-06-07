@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/nimgo/nim"
+	"github.com/nimgo/nimble"
 )
 
 func main() {
@@ -21,10 +21,10 @@ func main() {
 	//	Use(subrouter),
 	//)
 
-	n := nim.New()
-	n.WithFunc(saysHi("alibaba"))
+	ns := nimble.New()
+	ns.WithFunc(saysHi("alibaba"))
 
-	nim.Run(n, ":3000")
+	nimble.Run(ns, ":3000")
 
 	//n := nim.DefaultWithContext(context.TODO())
 	//n.UseFunc(myMiddleware)

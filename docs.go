@@ -21,4 +21,4 @@
 //    n.Use(mux)
 //    n.Run(":8000")
 //  }
-package nim
+package nimble
